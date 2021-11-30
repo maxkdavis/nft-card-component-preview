@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    padding: 1.25rem; /* (16px * 1.25) = 20px */
+}
+
+img {
+    max-width: 100%; /* ensures any images will fit the viewport */
+}
+
+p {
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;  /* removes bullets from lists */
+}
+
+/********** ID & CLASS SELECTORS **********/
+
+#container {
+    padding: 1.25rem;   /* (16px * 1.25) = 20px */   
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 0.5rem; /* (16px * 0.5) = 8px */
+    margin-bottom: 1rem;
+}
+
+#container .top-section {
+    position: relative;
+}
+
+#container .top-section .main-image {
+    border-radius: 0.5rem;
+}
+
+#container .top-section div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 5px);
+    background-color: hsl(178, 100%, 50%, 60%);
+    z-index: 999;
+    opacity: 0;
+}
+
+#container .top-section div:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* center the eye icon to the middle of the div*/
+#container .top-section div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container h2 {
+    color: hsl(0, 0%, 100%);
+    margin: 1rem 0;
+}
+
+#container h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+#container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+#container ul li {
+    display: flex;
+    align-items: center;
+}
+
+#container ul li:nth-child(1) {
+    color: hsl(178, 100%, 50%);
+}
+
+#container ul li img {
+    margin-right: 0.5rem; /* (16px * 0.5) = 8px */
+}
+
+#container .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 2rem;
+}
+
+#container .avatar img {
+    width: 2rem;
+    border: 1px solid white;
+    border-radius: 50%; 
+    margin-right: 1.5rem;
+}
+
+#container .avatar p span {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+#container .avatar p span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+/*Adding media query for responsive layout. If width of viewport exceeds 500px, the width of the container will be a fixed width of 450px, and the margin on the left and right will be even so that the container spaces evently in the middle of the page*/
+@media (min-width: 500px) {
+    #container {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
