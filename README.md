@@ -4,16 +4,14 @@ This is a solution to the NFT preview card component challenge on Frontend Mento
 
 ## Overview/Challenge
 
-This 'newbie' challenge focused primarily on HTML and CSS. 
-
-Users should be able to:
+Using HTML and CSS users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
 ### Links
 
-- Live Site URL: https://maxkdavis.github.io/nft-card-component-preview/
+- Live Site URL: https://maxkdavis.github.io/FrontendMentors_four_cards_section/
 
 ### What I learned
 
