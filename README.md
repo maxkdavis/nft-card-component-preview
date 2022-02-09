@@ -14,7 +14,7 @@ This is a solution to the NFT preview card component challenge on Frontend Mento
 
 ### Links
 
--   Live Site URL: https://maxkdavis.github.io/FrontendMentors_four_cards_section/
+-   Live Site URL: https://maxkdavis-nft-card-component.netlify.app
 
 ### Overview/Challenge
 
