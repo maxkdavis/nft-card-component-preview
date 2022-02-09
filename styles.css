@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 * {
     margin: 0;
@@ -7,11 +7,15 @@
 }
 
 body {
-    background-color:hsl(217, 54%, 11%);
+    background-color: hsl(217, 54%, 11%);
     color: hsl(215, 51%, 70%);
     font-size: 18px;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     padding: 1.25rem; /* (16px * 1.25) = 20px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 img {
@@ -23,16 +27,17 @@ p {
 }
 
 ul {
-    list-style-type: none;  /* removes bullets from lists */
+    list-style-type: none; /* removes bullets from lists */
 }
 
 /********** ID & CLASS SELECTORS **********/
 
 #container {
-    padding: 1.25rem;   /* (16px * 1.25) = 20px */   
+    padding: 1.25rem; /* (16px * 1.25) = 20px */
     background-color: hsl(216, 50%, 16%);
     border-radius: 0.5rem; /* (16px * 0.5) = 8px */
     margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #container .top-section {
@@ -57,6 +62,7 @@ ul {
     opacity: 1;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
+    border-radius: 0.25rem;
 }
 
 /* center the eye icon to the middle of the div*/
@@ -108,7 +114,7 @@ ul {
 #container .avatar img {
     width: 2rem;
     border: 1px solid white;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin-right: 1.5rem;
 }
 
